@@ -1,0 +1,161 @@
+@font-face {font-family: 'webfont';
+    src: url('font/webfont.eot'); /* IE9*/
+    src: url('font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/webfont.woff') format('woff'), /* chrome、firefox */
+    url('font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font{
+    font-family:"webfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+body {
+	background-color: black;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.corner-ul {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    background-color: steelblue;
+    border-radius: 0 0 100px 100px;
+    z-index: 999;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 200px;
+}
+
+figure {
+	margin: 0;
+	font-size: 12px;
+	color: white;
+	border: 1px solid white;
+	opacity: 0.6;
+    transition: .5s ease-in;
+}
+
+figure:hover {
+	opacity: 1;
+	transition: .5s ease-out;
+	background-color: skyblue;
+	border-color: steelblue;
+	color: black;
+	letter-spacing: 2px;
+}
+
+figure img {
+    width: 300px;
+}
+
+figcaption {
+	text-align: center;
+	margin: 5px;
+}
+
+.corner-lr {
+	position: fixed;
+	right: 0;
+	bottom: 142px;
+	width: 200px;
+	height: 100px;
+	line-height: 150px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+	background-color: steelblue;
+	border-radius: 100px 100px 0 0;
+    z-index: 999;
+
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	display: table;
+	background-color: steelblue;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.web-font {
+	display: table-cell;
+    color: white;
+}
+
+footer div:nth-child(1) {text-align: right;}
+footer div:nth-child(2) {text-align: center;}
+footer div:nth-child(3) {text-align: left;}
+
+.web-font a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 70px;
+	padding: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.web-font a:hover {
+	background-color: gold;
+	border: 1px solid gold;
+}
+
+.web-font a:active {
+	font-size: 0.9rem;
+	box-shadow: 0 0 5px dimgrey inset;
+	border: 1px solid dimgrey;
+}
+
+@media only screen and (max-width: 480px) {
+	.web-font {
+		font-size: 0.6rem;
+	}
+	.web-font h2 {
+		font-size: 0.6rem;
+	}
+	.web-font a {
+		width: 50px;
+	}
+	.corner-lr {
+		bottom: 100px;
+	}
+	.web-font a:active {
+		font-size: 0.55rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
